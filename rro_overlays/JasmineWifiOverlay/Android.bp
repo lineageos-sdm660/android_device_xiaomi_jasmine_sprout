@@ -1,6 +1,5 @@
 runtime_resource_overlay {
     name: "JasmineWifiOverlay",
     theme: "JasmineWifiOverlay",
-    sdk_version: "current",
     product_specific: true
 }
