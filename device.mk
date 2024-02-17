@@ -38,6 +38,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES_DEBUG += \
     bootctl
 
+# Fingerprint
+PRODUCT_PACKAGES += \
+    com.fingerprints.extension@1.0.vendor
+
 # Init
 PRODUCT_PACKAGES += \
     fstab.qcom \
