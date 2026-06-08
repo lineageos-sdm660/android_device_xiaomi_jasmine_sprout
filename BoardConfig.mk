@@ -23,6 +23,9 @@ TARGET_NO_RECOVERY := true
 # HIDL
 DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
 
+# Kernel
+TARGET_KERNEL_CONFIG += vendor/xiaomi/jasmine_sprout.config
+
 # Recovery
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.qcom
 
