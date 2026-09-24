@@ -11,10 +11,6 @@ function blob_fixup() {
             [ "$2" = "" ] && return 0
             sed -i 's|/system/etc/firmware|/vendor/firmware\x0\x0\x0\x0|g' "${2}"
             ;;
-        vendor/lib64/libvendor.goodix.hardware.fingerprint@1.0.so)
-            [ "$2" = "" ] && return 0
-            "${PATCHELF}" --replace-needed "libhidlbase.so" "libhidlbase-v32.so" "${2}"
-            ;;
         *)
             return 1
             ;;
